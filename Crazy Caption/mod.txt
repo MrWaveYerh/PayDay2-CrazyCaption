@@ -1,0 +1,17 @@
+{
+  	"name" : "CrazyCaptain",
+    "description" : "Captain Winters can Spawn and Respawn on all Difficulties and Offline.",
+    "author" : "♿HELLDIVERS ASSAULT IN PROGRESS♿"
+	"contact" : "https://steamcommunity.com/profiles/76561198968801409/",
+	"version" : "2",
+	"blt_version" : 2
+	"image"	: "captain.png",
+	"hooks" : [
+
+   { "hook_id" : "lib/tweak_data/groupaitweakdata", "script_path" : "groupaitweakdata.lua" },
+   { "hook_id": "lib/managers/group_ai_states/groupaistatebesiege","script_path": "wintersoffline.lua" }
+   { "hook_id": "lib/units/enemies/cop/copdamage","script_path": "copdamage.lua" }
+
+
+]
+}
